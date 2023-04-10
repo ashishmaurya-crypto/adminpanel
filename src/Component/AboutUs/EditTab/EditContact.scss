@@ -1,0 +1,135 @@
+p {
+    color: gray;
+    text-align: start;
+}
+
+.editcontact-container {
+    height: 100vh;
+    // border: 1px solid red;
+    // overflow: scroll;
+
+
+    .overflow-div {
+        height: 75vh;
+        // border: 1px solid black;
+        overflow-y: auto;
+        overflow-x: hidden;
+
+
+    }
+
+    .overflow-div::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .overflow-div {
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
+    }
+
+
+    .tag-tab {
+        border: 1px solid rgb(205, 200, 200);
+        max-width: 100%;
+        border-radius: 10px;
+        padding: 15px;
+        margin: 10px 0px 10px 0px;
+
+        .red-badge {
+            color: rgb(156, 6, 6);
+            background-color: #FFF2F2;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            transform: scale(0.9);
+            font-weight: 500;
+        }
+
+        .contact-row {
+            display: flex;
+            justify-content: space-between;
+
+            span {
+                font-weight: 500;
+            }
+        }
+
+        .email-row {
+            display: flex;
+            justify-content: space-between;
+
+            span {
+                font-size: 14px;
+                text-align: justify;
+            }
+
+            .title-social {
+                font-size: 10px;
+            }
+
+        }
+
+        .phone-row {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+}
+
+.edit-input {
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    padding: 10px 0px 10px 0px;
+
+    .labal {
+        text-align: start;
+        font-size: 12px;
+        font-weight: 600;
+        margin-top: 0.5rem;
+    }
+
+    .email-input {
+        width: 100%;
+        border: 1px solid rgb(210, 208, 208);
+        padding: 5px;
+        border-radius: 4px;
+        margin-top: 0.3rem;
+        background-color: rgb(246, 246, 246);
+    }
+
+    .add-btn {
+        background-color: #FFF2F2;
+        border: 1px solid #FFF2F2;
+        color: rgb(203, 10, 10) !important;
+        border-radius: 4px;
+        padding: 6px;
+        margin-top: 1.5rem;
+
+        svg {
+            stroke: currentcolor;
+            fill: rgb(203, 10, 10) !important;
+            stroke-width: 0;
+            height: 1em;
+            width: 1em;
+        }
+    }
+}
+
+.save-btn {
+    background-color: rgb(203, 10, 10);
+    border: 1px solid rgb(203, 10, 10);
+    color: white !important;
+    border-radius: 8px;
+    padding: 8px;
+    margin-top: 1.5rem;
+    width: 95%;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    margin: 1rem;
+}

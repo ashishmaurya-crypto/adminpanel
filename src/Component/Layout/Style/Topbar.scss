@@ -1,0 +1,139 @@
+.topbar-container {
+    position: relative;
+
+    .topbar {
+        height: 60px;
+        display: flex;
+        background-color: white;
+        z-index: 5;
+
+        .logo-container {
+            max-width: 220px;
+            min-width: auto;
+            max-height: 60px;
+            // border: 1px solid black;
+        }
+
+        .Search-container {
+            max-height: 60px;
+            // border: 1px solid black;
+
+            .Searchbar {
+                width: inherit;
+                position: relative;
+                max-width: 30rem;
+                // border: 1px solid black;
+
+                svg.Searchbar-img {
+                    stroke: currentcolor;
+                    fill: gray;
+                    stroke-width: 0;
+                    height: 0.9em !important;
+                    width: 0.9em !important;
+                }
+
+                .Searchbar-img {
+                    position: absolute;
+                    left: 10px;
+                    top: 8px;
+                }
+
+                .Searchbar-input {
+                    background-color: #EFF2F9;
+                    border-radius: 5px;
+                    border: 1px solid #EFF2F9;
+                    padding-left: 30px;
+                    padding-right: 20px;
+                    padding-bottom: 5px;
+                    width: 100%;
+                }
+
+                .Searchbar-input::-webkit-input-placeholder {
+                    /* Edge */
+                    font-size: 12px;
+                    color: black;
+                }
+
+                .Searchbar-input:-ms-input-placeholder {
+                    /* Internet Explorer 10-11 */
+                    font-size: 12px;
+                    color: black;
+
+                }
+
+                .Searchbar-input::placeholder {
+                    font-size: 12px;
+                    color: black;
+
+                }
+
+            }
+        }
+
+        .checkout-btn {
+            background-color: black;
+            color: white;
+            font-size: 12px;
+            border-radius: 5px;
+            padding: 3px 25px 3px 25px;
+            margin-right: 2rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .profile-img {
+
+            border-radius: 50%;
+            border: 1px solid black;
+        }
+
+        svg.profile-img {
+            stroke: currentcolor;
+            fill: gray;
+            stroke-width: 0;
+            width: 30px !important;
+            height: 30px !important;
+        }
+
+        .useradmin-btn {
+            border: none;
+            background-color: white;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+
+
+
+    }
+
+    .collapse.show {
+        width: 250px;
+        position: absolute;
+        right: 1%;
+        border-radius: 15px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    .collapse {
+        width: 250px;
+        position: absolute;
+        right: 1%;
+        border-radius: 15px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    .collapsing {
+        width: 250px !important;
+        position: absolute;
+        right: 1%;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius: 15px;
+    }
+
+    .card {
+        border-radius: 15px;
+        right: 1%;
+    }
+
+}

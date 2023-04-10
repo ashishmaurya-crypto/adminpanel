@@ -1,0 +1,116 @@
+.aboutus-container {
+    .aboutus-logo {
+        width: 10rem;
+    }
+
+    .verify-title {
+        font-size: 12px;
+        text-decoration: underline;
+        color: rgb(31, 154, 203);
+        margin-left: 0.5rem;
+        font-weight: 500;
+    }
+
+    .aboutus-textarea-container {
+        margin-top: 1rem;
+        display: flex;
+
+        .aboutus-textarea-edit {
+            width: 50%;
+            border: none;
+        }
+
+        .aboutus-textarea {
+            width: 50%;
+        }
+        .edit-btn{
+            width: 3rem;
+            height: 2rem;
+            border: none;
+            background-color: white;
+        }
+    }
+}
+
+.tab-table{
+
+    .nav-item{
+        margin-right: 2rem;
+    }
+
+    .nav-tabs .nav-link {
+        margin-bottom: -1px;
+        background: 0 0;
+        border: none !important;
+        
+        // border-top-left-radius: 0.25rem;
+        // border-top-right-radius: 0.25rem;
+    }
+
+    .nav-tabs .nav-link.active {
+        color: #495057;
+        background-color: #fff;
+        border-color: #dee2e6 #dee2e6 #fff;
+        border-bottom: 2px solid red !important;
+        font-weight: 500;
+    }
+
+    .nav-link {
+        display: block;
+        padding: 0.5rem 1rem;
+        color: gray;
+        text-decoration: none;
+        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+    }
+}
+
+.infotab-container{
+    .tag-tab{
+        border: 1px solid rgb(205, 200, 200);
+        max-width: 20rem;
+        min-height: 8rem;
+        border-radius: 10px;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        padding: 10px;
+
+        .red-badge{
+            color: rgb(156, 6, 6);
+            background-color: #FFF2F2;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            transform: scale(0.9);
+            font-weight: 500;
+        }
+
+        .contact-row{
+            display: flex;
+            justify-content: space-between;
+            span{
+                font-weight: 500;
+            }
+        }
+
+        .email-row{
+            display: flex;
+            justify-content: space-between;
+
+            span{
+                font-size: 14px;
+                text-align: justify;
+            }
+
+            .title-social{
+                font-size: 10px;
+            }
+            
+        }
+
+        .phone-row{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
