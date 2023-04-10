@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Style/Topbar.scss';
 import { Container, Row, Col } from 'reactstrap';
-import { Collapse, Button, CardBody, Card } from 'reactstrap';
+import { Collapse, CardBody, Card } from 'reactstrap';
 import { Assest } from '../../ReusableComponent/Assest/Assest';
 
 
@@ -27,7 +27,7 @@ export class Topbar extends Component {
                     <Container fluid className='topbar'>
                         <Row className='w-100 d-flex align-items-center'>
                             <Col className='px-5 mx-1 d-flex justify-content-start align-items-center logo-container'>
-                                <img width={70} src={Assest.logo} />
+                                <img width={70} alt="logo" src={Assest.logo} />
                             </Col>
                             <Col className='px-4 d-flex justify-content-start align-items-center Search-container'>
                                 <div className='Searchbar'>

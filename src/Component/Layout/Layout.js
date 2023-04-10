@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Outlet, Link } from 'react-router-dom';
-import { Container, Row, Col } from 'reactstrap';
+import { Outlet } from 'react-router-dom';
+import { Container, Row } from 'reactstrap';
 import './Style/Layout.scss';
 import Topbar from './Topbar';
 import Sidebar from './Sidebar';

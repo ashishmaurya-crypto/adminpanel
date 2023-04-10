@@ -1,5 +1,5 @@
-import React from "react";
-import { Assest } from "../../../ReusableComponent/Assest/Assest";
+// import React from "react";
+// import { Assest } from "../../../ReusableComponent/Assest/Assest";
 
 
 export const Data = [

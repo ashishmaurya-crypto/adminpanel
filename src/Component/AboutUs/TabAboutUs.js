@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, Nav, NavItem, NavLink, TabContent, TabPane, Container, Row, Col, Card, CardTitle, CardText } from 'reactstrap';
+import { Nav, NavItem, NavLink, TabContent, TabPane, Container, Row, Col } from 'reactstrap';
 import './AboutUs.scss';
 import InfoTab from './Tab/InfoTab';
 import FAQTab from './Tab/FAQTab';
@@ -19,7 +19,7 @@ export class TabAboutUs extends Component {
                     <Nav tabs>
                         <NavItem>
                             <NavLink
-                                className={this.state.activeTab == 1 ? "active" : ""}
+                                className={this.state.activeTab === 1 ? "active" : ""}
                                 onClick={() => this.setState({ activeTab: "1" })}
                             >
                                 Info
@@ -27,7 +27,7 @@ export class TabAboutUs extends Component {
                         </NavItem>
                         <NavItem>
                             <NavLink
-                                className={this.state.activeTab == 2 ? "active" : ""}
+                                className={this.state.activeTab === 2 ? "active" : ""}
                                 onClick={() => this.setState({ activeTab: "2" })}
                             >
                                 FAQ
@@ -35,7 +35,7 @@ export class TabAboutUs extends Component {
                         </NavItem>
                         <NavItem>
                             <NavLink
-                                className={this.state.activeTab == 3 ? "active" : ""}
+                                className={this.state.activeTab === 3 ? "active" : ""}
                                 onClick={() => this.setState({ activeTab: "3" })}
                             >
                                 Complaints and feedback
@@ -43,7 +43,7 @@ export class TabAboutUs extends Component {
                         </NavItem>
                         <NavItem>
                             <NavLink
-                                className={this.state.activeTab == 4 ? "active" : ""}
+                                className={this.state.activeTab === 4 ? "active" : ""}
                                 onClick={() => this.setState({ activeTab: "4" })}
                             >
                                 Privacy Policy
@@ -51,7 +51,7 @@ export class TabAboutUs extends Component {
                         </NavItem>
                         <NavItem>
                             <NavLink
-                                className={this.state.activeTab == 5 ? "active" : ""}
+                                className={this.state.activeTab === 5 ? "active" : ""}
                                 onClick={() => this.setState({ activeTab: "5" })}
                             >
                                 Terms & Conditions

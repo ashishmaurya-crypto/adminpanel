@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { SidebarData } from './SidebarData';
 import { Assest } from '../../ReusableComponent/Assest/Assest';
 import './Style/Sidebar.scss'
