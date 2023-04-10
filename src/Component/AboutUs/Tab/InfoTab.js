@@ -40,7 +40,7 @@ export default function InfoTab() {
                 <div className='d-flex align-items-center'>
                   {item.icon}&nbsp;<span> {item.title}</span>
                 </div>
-                <div onClick={() => showContact(item.title)}>
+                <div className='cursor' onClick={() => showContact(item.title)}>
                   {item.pencil}
                 </div>
               </div>

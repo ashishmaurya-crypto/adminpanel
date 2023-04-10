@@ -122,7 +122,7 @@ class EditContact extends Component {
                                                     <Assest.ContactsBook fill="gray" />&nbsp;<span>{item.title}</span>
                                                 </div>
                                                 <div>
-                                                    <Assest.MdDelete onClick={() => this.handleDelete(index)} className='mx-2' fill="red" /><Assest.HiPencil onClick={() => this.setState({ onEdit: true, indexNum: index, indexData: item })} className='mx-2' fill="red" />
+                                                    <Assest.MdDelete onClick={() => this.handleDelete(index)} className='mx-2 cursor' fill="red" /><Assest.HiPencil  onClick={() => this.setState({ onEdit: true, indexNum: index, indexData: item })} className='mx-2 cursor' fill="red" />
                                                 </div>
                                             </div>
                                             <div className='email-row w-100 mt-3'>
