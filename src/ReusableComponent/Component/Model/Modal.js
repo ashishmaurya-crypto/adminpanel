@@ -7,7 +7,7 @@ function Modal(props) {
     useEffect(() => {
         setDisplayModal(props.show);
 
-    }, [alert, props.show]);
+    }, [props.show]);
 
     const closeHandler = (e) => {
         setDisplayModal(!displayModal);

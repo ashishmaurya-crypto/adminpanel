@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Nav, NavItem, NavLink, TabContent, TabPane, Container, Row, Col } from 'reactstrap';
+import { Nav, NavItem, NavLink, TabContent, TabPane, Row, Col } from 'reactstrap';
 import './AboutUs.scss';
 import InfoTab from './Tab/InfoTab';
 import FAQTab from './Tab/FAQTab';
