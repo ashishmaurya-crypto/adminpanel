@@ -17,41 +17,41 @@ export class TabAboutUs extends Component {
             <>
                 <div className='tab-table'>
                     <Nav tabs>
-                        <NavItem>
+                        <NavItem className='cursor'>
                             <NavLink
-                                className={this.state.activeTab === 1 ? "active" : ""}
+                                className={this.state.activeTab === '1' ? "active" : ""}
                                 onClick={() => this.setState({ activeTab: "1" })}
                             >
                                 Info
                             </NavLink>
                         </NavItem>
-                        <NavItem>
+                        <NavItem className='cursor'>
                             <NavLink
-                                className={this.state.activeTab === 2 ? "active" : ""}
+                                className={this.state.activeTab === '2' ? "active" : ""}
                                 onClick={() => this.setState({ activeTab: "2" })}
                             >
                                 FAQ
                             </NavLink>
                         </NavItem>
-                        <NavItem>
+                        <NavItem className='cursor'>
                             <NavLink
-                                className={this.state.activeTab === 3 ? "active" : ""}
+                                className={this.state.activeTab === "3" ? "active" : ""}
                                 onClick={() => this.setState({ activeTab: "3" })}
                             >
                                 Complaints and feedback
                             </NavLink>
                         </NavItem>
-                        <NavItem>
+                        <NavItem className='cursor'>
                             <NavLink
-                                className={this.state.activeTab === 4 ? "active" : ""}
+                                className={this.state.activeTab === "4"? "active" : ""}
                                 onClick={() => this.setState({ activeTab: "4" })}
                             >
                                 Privacy Policy
                             </NavLink>
                         </NavItem>
-                        <NavItem>
+                        <NavItem className='cursor'>
                             <NavLink
-                                className={this.state.activeTab === 5 ? "active" : ""}
+                                className={this.state.activeTab === "5" ? "active" : ""}
                                 onClick={() => this.setState({ activeTab: "5" })}
                             >
                                 Terms & Conditions
