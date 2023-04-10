@@ -76,7 +76,7 @@ class EditContact extends Component {
                 <Container className='p-4 editcontact-container position-relative'>
                     <Row>
                         <Col className='d-flex justify-content-start'>
-                            <span className='d-flex align-items-center'><FaLongArrowAltLeft onClick={() => (this.state.onEdit ? this.setState({ onEdit: false }) : this.props.onclose())} /></span>
+                            <span className='d-flex align-items-center cursor'><FaLongArrowAltLeft onClick={() => (this.state.onEdit ? this.setState({ onEdit: false }) : this.props.onclose())} /></span>
                             <span className='mx-2'><h4 className='mt-2'>Contacts</h4></span>
                         </Col>
                     </Row>
