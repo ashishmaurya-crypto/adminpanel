@@ -9,7 +9,6 @@ import { GoChevronUp } from "react-icons/go";
 import {MdOutlineShoppingCart} from "react-icons/md";
 import { MdVerified } from 'react-icons/md';
 import { HiPencil } from 'react-icons/hi';
-import {RiContactsBookLine} from 'react-icons/ri';
 import {FaMapMarkerAlt} from 'react-icons/fa';
 import {MdWorkHistory} from 'react-icons/md';
 import {BiLinkAlt} from 'react-icons/bi';
@@ -30,7 +29,6 @@ import { HiPencilAlt } from 'react-icons/hi';
 import { RiContactsBook2Fill } from 'react-icons/ri';
 import { FaGlobe } from 'react-icons/fa';
 import { AiFillFacebook } from 'react-icons/ai';
-import { MdEmail } from 'react-icons/md';
 
 export const Assest = {
       logo : logo,
