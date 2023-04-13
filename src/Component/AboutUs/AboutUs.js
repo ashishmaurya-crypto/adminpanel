@@ -6,7 +6,7 @@ import TabAboutUs from './TabAboutUs';
 
 export default function AboutUs() {
   const [textareaHeight, setTextareaHeight] = useState('auto');
-  const [aboutusTxt, setAboutusTxt] = useState('assaasassdfefeffe brgrgrg sassasa ewewewexz eredf');
+  const [aboutusTxt, setAboutusTxt] = useState('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.');
   const [isEditable, setIsEditable] = useState(false);
 
 
@@ -41,17 +41,22 @@ export default function AboutUs() {
           </div>
         </Row>
         <Row className='aboutus-textarea-container'>
-          <textarea
+          {isEditable ? <textarea
             className={isEditable ? 'aboutus-textarea' : 'aboutus-textarea-edit'}
             style={{ height: textareaHeight }}
             value={aboutusTxt}
             onChange={handleTextareaChange}
             disabled={isEditable ? false : true}
           />
-          <button className='edit-btn' onClick={()=> setIsEditable(!isEditable)}><Assest.HiPencil /></button>
+            :
+            <div className={isEditable ? 'aboutus-textarea' : 'aboutus-textarea-edit'}>
+              <p>{aboutusTxt}</p>
+            </div>}
+          {isEditable ? <button className='edit-btn' onClick={() => setIsEditable(!isEditable)}>< Assest.editPencil fill='red' /></button> :
+            <button className='edit-btn' onClick={() => setIsEditable(!isEditable)}><Assest.HiPencil fill='red' /></button>}
         </Row>
         <Row className='mt-4'>
-          <TabAboutUs/>
+          <TabAboutUs />
         </Row>
       </Container>
 

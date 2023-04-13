@@ -1,4 +1,10 @@
 .aboutus-container {
+
+    .aboutus-title{
+        h4{
+            font-weight: 600;
+        }
+    }
     .aboutus-logo {
         width: 10rem;
     }
@@ -18,10 +24,17 @@
         .aboutus-textarea-edit {
             width: 50%;
             border: none;
+            background-color: white;
+
+            p{
+                border: 1px solid transparent;
+                background-color: white;
+            }
         }
 
         .aboutus-textarea {
             width: 50%;
+            background-color: white;
         }
         .edit-btn{
             width: 3rem;
@@ -48,11 +61,11 @@
     }
 
     .nav-tabs .nav-link.active {
-        color: #495057;
+        color: black;
         background-color: #fff;
         border-color: #dee2e6 #dee2e6 #fff;
         border-bottom: 2px solid red !important;
-        font-weight: 500;
+        font-weight: 600;
     }
 
     .nav-link {
@@ -89,7 +102,7 @@
             display: flex;
             justify-content: space-between;
             span{
-                font-weight: 500;
+                font-weight: 600;
             }
         }
 
@@ -105,12 +118,29 @@
             .title-social{
                 font-size: 10px;
             }
+
+            .address{
+                margin-right: 3rem;
+                text-indent: 2px;
+            }
+
+            .email-span{
+                // margin-right: 3rem;
+                text-indent: 2px;
+                // width: fit-content;
+            }
+
+            
             
         }
 
         .phone-row{
             display: flex;
             justify-content: space-between;
+
+            .phone-span{
+                font-size: 14px;
+            }
         }
     }
 }

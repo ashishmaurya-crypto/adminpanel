@@ -16,7 +16,7 @@ body {
 
 
 .Overlay {
-    background-color: rgba(0, 0, 0, 0.55);
+    background-color: transparent;
     top: 0;
     bottom: 0;
     left: 0;
@@ -37,7 +37,7 @@ body {
     background-color: white;
     min-width: 30%;
     height: 100vh;
-    box-shadow: 0 0 4px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     top: 0;
     padding: 0 12px 12px;
     transition: all 0.3s ease-out;

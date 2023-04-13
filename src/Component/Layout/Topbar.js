@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './Style/Topbar.scss';
 import { Container, Row, Col } from 'reactstrap';
 import { Collapse, CardBody, Card } from 'reactstrap';
+import { NavLink } from 'react-router-dom';
 import { Assest } from '../../ReusableComponent/Assest/Assest';
 
 
@@ -49,11 +50,13 @@ export class Topbar extends Component {
                     <Collapse
                         isOpen={this.state.collapse}
                     >
-                        <Card>
-                            <CardBody>
-                               <ul>
-                                <li>Logout</li>
-                               </ul>
+                        <Card className='collapse-card'>
+                            <CardBody className='collapse-body'>
+                                <li className='collapse-list'>
+                                    <NavLink className={({ isActive }) => isActive ? "navlink active" : 'navlink'}>
+                                        Logout
+                                    </NavLink>
+                                </li>
                             </CardBody>
                         </Card>
                     </Collapse>

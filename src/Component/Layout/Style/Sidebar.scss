@@ -17,19 +17,26 @@
         margin: 0.5rem;
 
         h5{
-            font-size: 14px;
-            font-weight: 500;
+            font-size: 13px;
+            font-weight: 600;
+            margin-top: 2px;
         }
 
         p{
             font-size: 12px;
+            text-align: center;
+            color: black;
         }
 
         button{
             background-color: black;
             color: white;
             margin-bottom: 0.5rem;
-            border-radius: 5px;
+            border-radius: 7px;
+            font-size: 10px;
+            padding: 4px 20px 4px 20px;
+            border: 1px solid black;
+            font-weight: 600;
         }
     }
 
@@ -51,6 +58,7 @@
         color: gray;
         margin-left: 10px;
         font-size: 12px;
+        margin-top: 2px;
     }
 
     .nav-text a {

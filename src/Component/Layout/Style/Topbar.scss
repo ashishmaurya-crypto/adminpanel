@@ -137,3 +137,41 @@
     }
 
 }
+
+.collapse-card {
+
+    .collapse-body {
+        .collapse-list {
+            display: flex;
+            justify-content: center;
+            
+
+            .navlink {
+                text-decoration: none;
+                color: gray; 
+                font-size: 14px; 
+                width: 100%;
+                padding: 8px 0px 8px 0px;
+            }
+
+            .navlink .active {
+                text-decoration: none;
+                color: rgb(171, 22, 22);
+                font-size: 14px; 
+                width: 100%;
+                padding: 8px 0px 8px 0px;
+            }
+            
+        }
+        .collapse-list:hover .navlink{
+            border-radius: 5px;
+            background-color: rgb(246, 224, 224);
+            border: 1px solid rgb(241, 217, 217);  
+            color: rgb(171, 22, 22);
+            font-weight: 600;
+            padding: 8px 0px 8px 0px;
+        }
+    }
+
+
+}

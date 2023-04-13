@@ -5,17 +5,17 @@
 export const Data = [
     {
         title: 'Sales Team',
-        email: ['ashish@gmail.com'],
+        email: ['salesteam@br.in'],
         phone: [80100444343],
     },
     {
         title: 'Marketing Team',
-        email: ['sales@gmail.com'],
+        email: ['salesteam2@br.in'],
         phone: [80100444343 ],
     },
     {
         title: 'Marketing Team',
-        email: ['sales@gmail.com'],
+        email: ['salesteam3@br.in'],
         phone: [80100444343 ],
     },
 ];

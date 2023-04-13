@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Container, Row } from 'reactstrap';
 import './../AboutUs.scss';
 import { TabData } from '../TabData/TabData';
-import { MdOutlineMailOutline } from 'react-icons/md';
+import { MdEmail } from 'react-icons/md';
 import { BsFillTelephoneFill } from 'react-icons/bs';
 import Modal from '../../../ReusableComponent/Component/Model/Modal';
 import EditContact from '../EditTab/EditContact';
@@ -48,7 +48,9 @@ export default function InfoTab() {
                 <>
                   <div className='email-row w-100 mt-3'>
                     <div className='d-flex justify-content-start align-items-center w-75'>
-                      <MdOutlineMailOutline fill='gray' />&nbsp;<span>{item.email[0]}</span>
+                      <MdEmail fill='#b8b6b6' />&nbsp;<span>
+                        {item.email[0]}<span className='mx-1'>/</span> {item.email[1]}
+                        </span>
                     </div>
                     <div className='w-25 d-flex justify-content-end align-items-center'>
                       <div className='red-badge'>
@@ -57,13 +59,13 @@ export default function InfoTab() {
                     </div>
                   </div>
                   <div className='phone-row d-flex justify-content-start align-items-center mt-2'>
-                    <BsFillTelephoneFill fill='gray' />&nbsp;<span>34434343434</span>
+                    <BsFillTelephoneFill fill='#b8b6b6' />&nbsp;<span className='phone-span'>{item.phone[0]} / {item.phone[1]}</span>
                   </div>
                 </> : item.title === 'Address' ?
                   <>
                     <div className='email-row'>
                       <div className='d-flex justify-content-start align-items-center mt-3'>
-                        &nbsp;<span>{item.address}</span>
+                        &nbsp;<span className='address'>{item.address}</span>
                       </div>
                     </div>
                   </>
@@ -86,7 +88,7 @@ export default function InfoTab() {
                             )}
                           </div>
                         </div>
-                      </> : item.title === 'Statemnt' ?
+                      </> : item.title === 'Statement' ?
                         <>
                           <div className='email-row w-100 mt-3'>
                             <div className='d-flex justify-content-start align-items-center w-75'>

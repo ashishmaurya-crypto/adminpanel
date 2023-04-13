@@ -23,8 +23,8 @@ export default function Sidebar() {
           );
         })}
         <Row className='px-3 mt-4 need-help'>
-          <Col>
-          <Assest.QuestionCircle fill='gray'/>
+          <Col className=''>
+          <img className='my-1' width={20} src={Assest.questionlogo} alt='logo' />
            <h5>Need Help?</h5>
            <p>Our support team is at your disposal.</p>
            <button>Get Help</button>
