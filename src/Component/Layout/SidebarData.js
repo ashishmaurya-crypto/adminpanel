@@ -1,7 +1,4 @@
 import React from 'react';
-import * as FaIcons from 'react-icons/fa';
-import * as AiIcons from 'react-icons/ai';
-import * as IoIcons from 'react-icons/io';
 import { Assest } from '../../ReusableComponent/Assest/Assest';
 import { MdPeopleAlt } from 'react-icons/md';
 
@@ -9,13 +6,13 @@ export const SidebarData = [
   {
     title: 'Dashboard',
     path: '/',
-    icon: <Assest.home />,
+    icon: <Assest.Home />,
     cName: 'nav-text'
   },
   {
     title: 'Orders',
     path: '/orders',
-    icon: <Assest.order />,
+    icon: <Assest.Order />,
     cName: 'nav-text'
   },
   {
@@ -27,19 +24,19 @@ export const SidebarData = [
   {
     title: 'Partners',
     path: '/partners',
-    icon: <Assest.partner />,
+    icon: <Assest.Partner />,
     cName: 'nav-text'
   },
   {
     title: 'Product Listings',
     path: '/product-listings',
-    icon: <Assest.product />,
+    icon: <Assest.Product />,
     cName: 'nav-text'
   },
   {
     title: 'Awards & Honours',
     path: '/awards-and-honours',
-    icon: <Assest.trophy />,
+    icon: <Assest.Trophy />,
     cName: 'nav-text'
   },
   {

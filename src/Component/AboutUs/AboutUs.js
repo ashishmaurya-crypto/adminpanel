@@ -52,7 +52,7 @@ export default function AboutUs() {
             <div className={isEditable ? 'aboutus-textarea' : 'aboutus-textarea-edit'}>
               <p>{aboutusTxt}</p>
             </div>}
-          {isEditable ? <button className='edit-btn' onClick={() => setIsEditable(!isEditable)}>< Assest.editPencil fill='red' /></button> :
+          {isEditable ? <button className='edit-btn' onClick={() => setIsEditable(!isEditable)}>< Assest.EditPencil fill='red' /></button> :
             <button className='edit-btn' onClick={() => setIsEditable(!isEditable)}><Assest.HiPencil fill='red' /></button>}
         </Row>
         <Row className='mt-4'>
