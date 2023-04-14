@@ -22,7 +22,7 @@ class Layout extends Component {
         return (
             <>
                 <Container fluid className='layout-container'>
-                    <Row>
+                    <Row className='topbar-container'>
                         <Topbar />
                     </Row>
                     <Row className='main-container'>
