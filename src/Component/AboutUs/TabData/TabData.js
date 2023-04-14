@@ -25,7 +25,7 @@ export const TabData = [
         path: '/team-members',
         pencil: <Assest.HiPencil fill="red" />,
         icon: <Assest.WorkHistory fill="#b8b6b6" />,
-        timing: "Mon - Sun Open 24 Hrs",
+        timing: "Monday To Friday - 9:00 Am To 6:00 Pm",
         cName: 'nav-text'
     },
     {
@@ -46,7 +46,7 @@ export const TabData = [
         path: '/product-listings',
         pencil: <Assest.HiPencil fill="red" />,
         icon: <Assest.QuoteLeft fill="#b8b6b6" />,
-        statement: "One of the best company ",
+        statement: "You think it we ink it.",
         cName: 'nav-text'
     }
 ];
