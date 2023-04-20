@@ -1,21 +1,53 @@
 .aboutus-container {
+    @media screen and (max-width : 1000px) {
+        padding: 0% !important;
+    }
 
-    .aboutus-title{
-        h4{
+    .aboutus-title {
+        h4 {
             font-weight: 600;
         }
     }
+  
+
     .aboutus-logo {
         width: 10rem;
+
+        @media screen and (max-width : 1000px) {
+            width: 5rem;
+        }
     }
 
-    .verify-title {
-        font-size: 12px;
-        text-decoration: underline;
-        color: rgb(31, 154, 203);
-        margin-left: 0.5rem;
-        font-weight: 500;
+    .verify-title-container {
+        margin-left: 1rem;
+        padding-top: 0.8rem;
+        .verify-title {
+            font-size: 12px;
+            text-decoration: underline;
+            color: rgb(31, 154, 203);
+            margin-left: 0.5rem;
+            font-weight: 500;
+            @media screen and (max-width : 1000px) {
+                font-size: 11px;
+            }
+        }
+
+        @media screen and (max-width : 1000px) {
+            margin-left: 0.3rem;
+            padding-top: 0.1rem; 
+
+            svg {
+                stroke: currentcolor;
+                fill: gray;
+                stroke-width: 0;
+                height: 0.8em;
+                width: 0.8em;
+            }
+        }
+
     }
+
+
 
     .aboutus-textarea-container {
         margin-top: 1rem;
@@ -25,8 +57,11 @@
             width: 50%;
             border: none;
             background-color: white;
+            @media screen and (max-width : 1000px) {
+                width: 75%;
+            }
 
-            p{
+            p {
                 border: 1px solid transparent;
                 background-color: white;
             }
@@ -35,8 +70,13 @@
         .aboutus-textarea {
             width: 50%;
             background-color: white;
+
+            @media screen and (max-width : 1000px) {
+                width: 75%;
+            }
         }
-        .edit-btn{
+
+        .edit-btn {
             width: 3rem;
             height: 2rem;
             border: none;
@@ -45,9 +85,9 @@
     }
 }
 
-.tab-table{
+.tab-table {
 
-    .nav-item{
+    .nav-item {
         margin-right: 2rem;
     }
 
@@ -55,7 +95,7 @@
         margin-bottom: -1px;
         background: 0 0;
         border: none !important;
-        
+
         // border-top-left-radius: 0.25rem;
         // border-top-right-radius: 0.25rem;
     }
@@ -73,12 +113,12 @@
         padding: 0.5rem 1rem;
         color: gray;
         text-decoration: none;
-        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+        transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
     }
 }
 
-.infotab-container{
-    .tag-tab{
+.infotab-container {
+    .tag-tab {
         border: 1px solid rgb(205, 200, 200);
         max-width: 20rem;
         min-height: 8rem;
@@ -88,7 +128,11 @@
         margin-top: 1rem;
         padding: 10px;
 
-        .red-badge{
+        @media screen and (max-width : 1000px) {
+            margin-left: 2% !important;
+        }
+
+        .red-badge {
             color: rgb(156, 6, 6);
             background-color: #FFF2F2;
             width: 30px;
@@ -98,47 +142,48 @@
             font-weight: 500;
         }
 
-        .contact-row{
+        .contact-row {
             display: flex;
             justify-content: space-between;
-            span{
+
+            span {
                 font-weight: 600;
             }
         }
 
-        .email-row{
+        .email-row {
             display: flex;
             justify-content: space-between;
 
-            span{
+            span {
                 font-size: 14px;
                 text-align: justify;
             }
 
-            .title-social{
+            .title-social {
                 font-size: 10px;
             }
 
-            .address{
+            .address {
                 margin-right: 3rem;
                 text-indent: 2px;
             }
 
-            .email-span{
+            .email-span {
                 // margin-right: 3rem;
                 text-indent: 2px;
                 // width: fit-content;
             }
 
-            
-            
+
+
         }
 
-        .phone-row{
+        .phone-row {
             display: flex;
             justify-content: space-between;
 
-            .phone-span{
+            .phone-span {
                 font-size: 14px;
             }
         }

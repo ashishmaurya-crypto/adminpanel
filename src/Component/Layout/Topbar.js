@@ -4,6 +4,8 @@ import { Container, Row, Col } from 'reactstrap';
 import { Collapse, CardBody, Card } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 import { Assest } from '../../ReusableComponent/Assest/Assest';
+import SidebarModel from '../../ReusableComponent/Component/SidebarModel/SidebarModel';
+import Sidebar from './Sidebar';
 
 
 export class Topbar extends Component {
@@ -14,6 +16,7 @@ export class Topbar extends Component {
         this.state = {
             isProfileOpen: true,
             collapse: false,
+            isShowSidebar: false,
         }
     }
 
@@ -25,7 +28,7 @@ export class Topbar extends Component {
         return (
             <>
                 <div className='topbar-container'>
-                    <Container fluid className='topbar'>
+                    <Container fluid className='topbar hidden-on-mobile'>
                         <Row className='w-100 d-flex align-items-center'>
                             <Col className='px-5 mx-1 d-flex justify-content-start align-items-center logo-container'>
                                 <img width={70} alt="logo" src={Assest.logo} />
@@ -47,6 +50,22 @@ export class Topbar extends Component {
                             </Col>
                         </Row>
                     </Container>
+                    <Container fluid className='topbar-mobile hidden-on-desktop'>
+                        <Row className='w-100 d-flex justify-content-center align-items-center'>
+                            <Col className='d-flex justify-content-start align-items-center'>
+                                <Assest.HamburgerMenu onClick={() => this.setState({ isShowSidebar: !this.state.isShowSidebar })} />
+                                &nbsp;&nbsp;
+                                <img width={70} alt="logo" src={Assest.logo} />
+                            </Col>
+                            <Col className='d-flex justify-content-end align-items-center'>
+                                <button className='checkout-btn mx-2'><Assest.ShoppingCart /> &nbsp;&nbsp;(200)</button>
+                                <span className='d-flex align-items-center' onClick={() => this.showProfile()}>
+                                    <Assest.CgProfile className='profile-img' />
+                                    {this.state.isProfileOpen ? <Assest.GoChevronDown /> : <Assest.GoChevronUp />}
+                                </span>
+                            </Col>
+                        </Row>
+                    </Container>
                     <Collapse
                         isOpen={this.state.collapse}
                     >
@@ -61,9 +80,13 @@ export class Topbar extends Component {
                         </Card>
                     </Collapse>
                 </div>
-
-
-
+                <SidebarModel show={this.state.isShowSidebar} onClose={() => this.setState({ isShowSidebar: !this.state.isShowSidebar })}>
+                    <div className='Searchbar my-4'>
+                        <Assest.BsSearch className='Searchbar-img' fill='gray' />
+                        <input className='Searchbar-input' placeholder='Search...' />
+                    </div>
+                    <Sidebar onClose={()=> this.setState({ isShowSidebar: false })} />
+                </SidebarModel>
             </>
         )
     }

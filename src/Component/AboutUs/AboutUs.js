@@ -33,8 +33,8 @@ export default function AboutUs() {
             <div className=''>
               <img className='aboutus-logo' src={Assest.aboutuslogo} alt='logo' />
             </div>
-            <div className='mx-4 d-flex justify-content-start align-items-start'>
-              <div className='mt-2 d-flex justify-content-start align-items-center'>
+            <div className='verify-title-container w-100 d-flex justify-content-start align-items-start'>
+              <div className='w-100 d-flex justify-content-start align-items-center'>
                 <Assest.MdVerified fill='gray' /><span className='verify-title'>Verify Company</span>
               </div>
             </div>

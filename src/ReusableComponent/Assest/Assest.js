@@ -29,6 +29,7 @@ import { HiPencilAlt } from 'react-icons/hi';
 import { RiContactsBook2Fill } from 'react-icons/ri';
 import { FaGlobe } from 'react-icons/fa';
 import { AiFillFacebook } from 'react-icons/ai';
+import {GiHamburgerMenu} from 'react-icons/gi';
 
 export const Assest = {
       logo : logo,
@@ -62,5 +63,5 @@ export const Assest = {
       Twitter : AiOutlineTwitter,
       QuestionCircle : FaQuestionCircle,
       FaGlobe : FaGlobe,
-
+      HamburgerMenu : GiHamburgerMenu,
 }

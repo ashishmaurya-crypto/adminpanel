@@ -98,7 +98,7 @@ class EditContact extends Component {
                                     </div>
                                 </Col>
                             </Row>
-                            <Row className='mt-4'>
+                            <Row className='my-4'>
                                 <Col className=''>
                                     <div className='edit-input'>
                                         {this.state.indexData.phone.map((item, index) =>
