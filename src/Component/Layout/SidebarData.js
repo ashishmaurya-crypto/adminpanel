@@ -10,33 +10,21 @@ export const SidebarData = [
     cName: 'nav-text'
   },
   {
-    title: 'Orders',
-    path: '/orders',
+    title: 'Features',
+    path: '/features',
     icon: <Assest.Order />,
     cName: 'nav-text'
   },
   {
-    title: 'Team Members',
-    path: '/team-members',
+    title: 'Pricing',
+    path: '/pricing',
+    icon: <Assest.MdPayments />,
+    cName: 'nav-text'
+  },
+  {
+    title: 'Students',
+    path: '/students',
     icon: <MdPeopleAlt />,
-    cName: 'nav-text'
-  },
-  {
-    title: 'Partners',
-    path: '/partners',
-    icon: <Assest.Partner />,
-    cName: 'nav-text'
-  },
-  {
-    title: 'Product Listings',
-    path: '/product-listings',
-    icon: <Assest.Product />,
-    cName: 'nav-text'
-  },
-  {
-    title: 'Awards & Honours',
-    path: '/awards-and-honours',
-    icon: <Assest.Trophy />,
     cName: 'nav-text'
   },
   {
@@ -48,9 +36,9 @@ export const SidebarData = [
     cName: 'nav-text'
   },
   {
-    title: 'Payment info',
-    path: '/payment-info',
-    icon: <Assest.MdPayments />,
+    title: 'Contact',
+    path: '/contact',
+    icon: <Assest.Product />,
     cName: 'nav-text'
   }
 ];

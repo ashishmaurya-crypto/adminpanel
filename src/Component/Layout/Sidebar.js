@@ -8,9 +8,8 @@ import './Style/Sidebar.scss'
 function Sidebar(props) {
   return (
     <>
-      <Container fluid className='sidebar hidden-on-mobile'>
+      {/* <Container fluid className='sidebar hidden-on-mobile'>
         <Row className='px-3'>
-          <img className='sidebarlogo-img' src={Assest.sidebarlogo} alt='logo'/>
         </Row>
         {SidebarData.map((item, index) => {
           return (
@@ -30,10 +29,10 @@ function Sidebar(props) {
            <button>Get Help</button>
           </Col>
         </Row>
-      </Container>
-      <Container fluid className='sidebar hidden-on-desktop'>
+      </Container> */}
+      <Container fluid className='sidebar'>
         <Row className='px-3'>
-          <img className='sidebarlogo-img' src={Assest.sidebarlogo} alt='logo'/>
+          {/* <img className='sidebarlogo-img' src={Assest.sidebarlogo} alt='logo'/> */}
         </Row>
         {SidebarData.map((item, index) => {
           return (

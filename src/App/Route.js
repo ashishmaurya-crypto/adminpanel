@@ -15,13 +15,11 @@ export class Router extends Component {
                         <Route path='/login' element={<Login />} /> */}
                         <Route element={<Layout/>}>
                             <Route path='/' element={<Dashboard />} />
-                            <Route path='/orders' element={<Dashboard />} />
-                            <Route path='/team-members' element={<Dashboard />} />
-                            <Route path='/partners' element={<Dashboard />} />
-                            <Route path='/product-listings' element={<Dashboard />} />
-                            <Route path='/awards-and-honours' element={<Dashboard />} />
+                            <Route path='/features' element={<AboutUs />} />
+                            <Route path='/pricing' element={<AboutUs />} />
+                            <Route path='/students' element={<AboutUs />} />
                             <Route path='/about-us' element={<AboutUs />} />
-                            <Route path='/payment-info' element={<Dashboard />} />
+                            <Route path='/contact' element={<AboutUs />} />
                         </Route>
                     </Routes>
                 </BrowserRouter>

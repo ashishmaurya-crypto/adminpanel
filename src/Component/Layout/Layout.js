@@ -27,9 +27,9 @@ class Layout extends Component {
                     </Row>
                     <Row className='main-container'>
                         <div className='d-flex p-4'>
-                            <div className='hidden-on-mobile'>
+                            {/* <div className='hidden-on-mobile'>
                                 <Sidebar />
-                            </div>
+                            </div> */}
                             <div className='mx-4 p-4 border outlet-container'>
                                 <Outlet />
                             </div>

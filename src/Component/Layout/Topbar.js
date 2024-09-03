@@ -28,10 +28,10 @@ export class Topbar extends Component {
         return (
             <>
                 <div className='topbar-container'>
-                    <Container fluid className='topbar hidden-on-mobile'>
+                    {/* <Container fluid className='topbar hidden-on-mobile'>
                         <Row className='w-100 d-flex align-items-center'>
                             <Col className='px-5 mx-1 d-flex justify-content-start align-items-center logo-container'>
-                                <img width={70} alt="logo" src={Assest.logo} />
+                                <span>Student App</span>
                             </Col>
                             <Col className='px-4 d-flex justify-content-start align-items-center Search-container'>
                                 <div className='Searchbar'>
@@ -40,7 +40,6 @@ export class Topbar extends Component {
                                 </div>
                             </Col>
                             <Col className='px-4 d-flex justify-content-end align-items-center'>
-                                <button className='checkout-btn'><Assest.ShoppingCart /> &nbsp;&nbsp;Checkout(200)</button>
                                 <span onClick={() => this.showProfile()}>
                                     <Assest.CgProfile className='profile-img' />
                                     <button className='useradmin-btn'>User Admin</button>
@@ -49,16 +48,15 @@ export class Topbar extends Component {
 
                             </Col>
                         </Row>
-                    </Container>
-                    <Container fluid className='topbar-mobile hidden-on-desktop'>
+                    </Container> */}
+                    <Container fluid className='topbar-mobile'>
                         <Row className='w-100 d-flex justify-content-center align-items-center'>
-                            <Col className='d-flex justify-content-start align-items-center'>
+                            <Col className='d-flex justify-content-start align-items-center logo-container'>
                                 <Assest.HamburgerMenu onClick={() => this.setState({ isShowSidebar: !this.state.isShowSidebar })} />
                                 &nbsp;&nbsp;
-                                <img width={70} alt="logo" src={Assest.logo} />
+                                <span>Student App</span>
                             </Col>
                             <Col className='d-flex justify-content-end align-items-center'>
-                                <button className='checkout-btn mx-2'><Assest.ShoppingCart /> &nbsp;&nbsp;(200)</button>
                                 <span className='d-flex align-items-center' onClick={() => this.showProfile()}>
                                     <Assest.CgProfile className='profile-img' />
                                     {this.state.isProfileOpen ? <Assest.GoChevronDown /> : <Assest.GoChevronUp />}
