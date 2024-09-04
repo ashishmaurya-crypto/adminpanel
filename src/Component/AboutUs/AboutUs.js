@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import { Assest } from '../../ReusableComponent/Assest/Assest';
 import './AboutUs.scss';
-import TabAboutUs from '../Dashboard/TabAboutUs';
 
 export default function AboutUs() {
 
