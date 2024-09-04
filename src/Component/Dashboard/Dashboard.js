@@ -52,7 +52,7 @@ export default function Dashboard() {
   };
 
   const handleFlagStudent = (student) => {
-    setStudents(students.map((s) => 
+    setStudents(students.map((s) =>
       s.id === student.id ? { ...s, flagged: !s.flagged } : s
     ));
   };
@@ -160,7 +160,10 @@ export default function Dashboard() {
       </Container>
 
       {(selectedStudent || isEdit) && (
-        <Modal show={selectedStudent || isEdit} onClose={() => setSelectedStudent(null)}>
+        <Modal show={selectedStudent || isEdit} onClose={() => {
+          setIsEdit(false);
+          setSelectedStudent(null)
+        }}>
           <Container fluid className='addStudent-container'>
             <Row className='addStudent-title'>
               <h3>{isEdit && !selectedStudent ? 'Add New Student' : isEdit ? 'Edit Student' : 'View Student'}</h3>
